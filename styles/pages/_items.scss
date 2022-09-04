@@ -1,0 +1,79 @@
+@use "../base";
+@use "../front-page";
+@use "../global";
+@use "../header";
+@use "../footer";
+
+
+
+/*-------------------------------
+
+items
+
+--------------------------------*/
+.items {
+    .item {
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        .item-img {
+            width: 50%;
+        }
+
+        .item-text {
+            width: 42%;
+            font-size: 1.4rem;
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            .price {
+                font-size: 1.2rem;
+            }
+
+            dl {
+                font-size: 1.2rem;
+                display: flex;
+                flex-wrap: wrap;
+
+                dt {
+                    width: 30%;
+                    font-weight: normal;
+                }
+
+                dd {
+                    width: 70%;
+                }
+            }
+
+        }
+    }
+}
+
+.link-text {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .items {
+        .item {
+            flex-direction: column;
+
+            .item-img {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .item-text {
+                width: 100%;
+            }
+        }
+    }
+
+
+}

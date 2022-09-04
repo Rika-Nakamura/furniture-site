@@ -1,0 +1,61 @@
+@use "../base";
+@use "../global" as g;
+@use "../header";
+@use "../footer";
+
+
+/*----------------------------------
+
+fv 
+
+-----------------------------------*/
+
+.top,
+.content {
+    padding-top: 80px;
+    padding-bottom: 160px;
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 23%;
+            margin-bottom: 40px;
+
+            & img {
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    .link-text {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0 20px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .top {
+        .product-list {
+            li {
+                width: 47%;
+            }
+        }
+    }
+
+    
+}
